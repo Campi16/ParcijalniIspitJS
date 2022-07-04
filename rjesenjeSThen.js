@@ -3,7 +3,7 @@ const RjesenjeSThen = {
     let termin = event.target.previousElementSibling.value;
     document.getElementById("results1").innerHTML =
       "<p>Učitavamo podatke...</p>";
-      fetch(`http://universities.hipolabs.com/search?name=${termin}`)
+      fetch(`https://universities.hipolabs.com/search?name=${termin}`)
       .then((response) => {
         return response.json();
       })
