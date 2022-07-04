@@ -19,7 +19,7 @@ class AsyncDebounce{
     let termin = this.elemPretrage.value;
     this.elemRazultata.innerHTML = "<p>Učitavamo podatke...</p>";
     let rezultat = await fetch(
-      `http://universities.hipolabs.com/search?name=${termin}`
+      `https://universities.hipolabs.com/search?name=${termin}`
     );
     rezultat = await rezultat.json();
 
